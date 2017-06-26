@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC 
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN" 
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+	
+<struts>
+	<package name="default" extends="struts-default">
+		<action name="getTutorial" class="org.shahani.ddb.action.TutorialAction">
+			<result name="success">/success.jsp</result>
+			<result name="failure">/error.jsp</result>
+		 </action>
+			
+		<action name="createPerson" class="org.shahani.ddb.logic.PersonRegister">
+			<result name="success">/success.jsp</result>
+			<result name="failure">/error.jsp</result>
+		</action>
+
+		<action name="carDelete" class="org.shahani.ddb.logic.DeleteCar">
+			<result name="success">/success.jsp</result>
+			<result name="failure">/error.jsp</result>
+		</action>
+
+		<action name="carRegister" class="org.shahani.ddb.logic.CarRegister">
+			<result name="success">/success.jsp</result>
+			<result name="failure">/error.jsp</result>
+		</action>
+
+		<action name="carUpdate" class="org.shahani.ddb.logic.UpdateCar">
+			<result name="success">/success.jsp</result>
+			<result name="failure">/error.jsp</result>
+		</action>
+
+		<action name="driverDelete" class="org.shahani.ddb.logic.DeleteDriver">
+			<result name="success">/success.jsp</result>
+			<result name="failure">/error.jsp</result>
+		</action>
+
+		<action name="driverRegister" class="org.shahani.ddb.logic.DriverRegister">
+			<result name="success">/success.jsp</result>
+			<result name="failure">/error.jsp</result>
+		</action>
+
+		<action name="driverUpdate" class="org.shahani.ddb.logic.UpdateDriver">
+			<result name="success">/success.jsp</result>
+			<result name="failure">/error.jsp</result>
+		</action>
+
+		<action name="locationDelete" class="org.shahani.ddb.logic.DeleteLocation">
+			<result name="success">/success.jsp</result>
+			<result name="failure">/error.jsp</result>
+		</action>
+
+		<action name="locationRegister" class="org.shahani.ddb.logic.LocationRegister">
+			<result name="success">/success.jsp</result>
+			<result name="failure">/error.jsp</result>
+		</action>
+
+		<action name="locationUpdate" class="org.shahani.ddb.logic.UpdateLocation">
+			<result name="success">/success.jsp</result>
+			<result name="failure">/error.jsp</result>
+		</action>
+
+		<action name="personDelete" class="org.shahani.ddb.logic.DeletePerson">
+			<result name="success">/success.jsp</result>
+			<result name="failure">/error.jsp</result>
+		</action>
+
+		<action name="personUpdate" class="org.shahani.ddb.logic.UpdatePerson">
+			<result name="success">/success.jsp</result>
+			<result name="failure">/error.jsp</result>
+		</action>
+		
+		<action name="query1" class="org.shahani.ddb.logic.QueryFirst">
+		</action>
+		
+		<action name="query2" class="org.shahani.ddb.logic.QuerySecond">
+		</action>
+		
+		<action name="query3" class="org.shahani.ddb.logic.QueryThird">
+		</action>
+		
+		<action name="query4" class="org.shahani.ddb.logic.QueryFourth">
+		</action>
+		
+		<action name="query5" class="org.shahani.ddb.logic.QueryFifth">
+		</action>
+		
+		<action name="queryd" class = "org.shahani.ddb.logic.DynamicQuery">
+			<result name = "success">/dynamicJourneyReport.jsp</result>
+		<result name = "failure">/error.jsp</result>
+		
+	</action>
+		
+	</package>
+</struts>
